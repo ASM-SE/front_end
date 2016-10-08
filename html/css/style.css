@@ -1,5 +1,26 @@
-*{ /*asterisco indica que o estilo será global*/
+
+/* Teste alteração de fonte:*/
+/*
+.title{
+    font-size: 40px;
+
+}
+
+.title:hover{
+    font-size: 60px;
+    transition: all 0.2s ease-out;
+    text-shadow: 2px 2px black;
+    opacity: 0.0;
+    color: red;
+    opacity: 0.8;
+}
+*/
+
+/* Asterisco indica que o estilo será global: */
+/*
+*{ 
     margin: 0;
     padding: 0;
     list-style: none;
 }
+*/
