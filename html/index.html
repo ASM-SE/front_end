@@ -1,210 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto Opensanca</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Site criado durante a trilha de frontend do Opensanca">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-        <title>OpenSanca - Front-End</title>
+</head>
 
-    </head>
-    <body>
-        <header>
-            <!-- Logo colocar imagem -->
-            <img src="images/logo-opensanca.png" width="100" alt="Logo Open Sanca">
+<body>
+	<header class="header">
+		<div class="container">
+			<!-- TODO: colocar imagem tratada -->
+			<img class="logo" src="images/logo-opensanca.png" alt="Logo Opensanca">
+			
+			<nav class="menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Instrutor</a></li>
+					<li><a href="">Dia 1</a></li>
+					<li><a href="">Dia 2</a></li>
+					<li><a href="">Dia 3</a></li>
+					<li><a href="">Dia 4</a></li>
+					<li><a href="">Eu participei!</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section class="home">
+		<div class="container">
+			<h1 class="title">Vem pro front!</h1>
+			<h2>Trilha Open Sanca</h2>
+		</div>
+	</section>
 
-            <nav>
-                <ul> <!-- (li>a)*7 + TAB gera a lista com a quantidade de vezes determinada -->
-                    <li><a href="">Home</a></li>
-                    <li><a href="instructor.html" >Instrutor</a></li> <!--target="_blank"-->
-                    <li><a href="">Dia 1</a></li> <!--No link se colocar download ele baixa o arquivo-->
-                    <li><a href="">Dia 2</a></li> <!--Se colocar mobile ele liga Ver mais em: http://caniuse.com/#search=download-->
-                    <li><a href="">Dia 3</a></li>
-                    <li><a href="">Dia 4</a></li>
-                    <li><a href="">Eu Participei!</a></li>
-                </ul>
-            </nav>
-        </header>
+	
+	<!-- Instrutor -->
+	<section class="instructor">
+		<div class="container">
+			<header>
+				<h1>Instrutor</h1>
+			</header>
+			<article>
+				<!-- <img class="image" src="images/instructor.png" alt="Logo Opensanca"> -->
+				<h2>Diego Kaimoti</h2>
+				<p>8 anos de experiência em desenvolvimento frontend e UI design.<br>
+					Já trabalhou em agência web, empresas de consultoria, e agora em uma startup. 
+				</p>
 
-        <!--HOME-->
-        <section class="home">
-            <h1 class="title">Vem pro front!</h1>
-            <h2>Trilha Open Sanca</h2>
+			</article>
+			<footer>
+				<ul class="contacts">
+					<li>
+						<a href="">
+							<span class="contacts-images facebook"></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="contacts-images linkedin"></span>
+						</a>
 
-        </section>
+					</li>
+					<li>
+						<a href="">
+							<span class="contacts-images mail"></span>
+						</a>
+					</li>
+				</ul>
+			</footer>
+	</section>
 
-        <!--INSTRUCTOR-->
-        <section class="instructor">
-            <h1>Instructor</h1>
-            <img src="images/opensanca.jpg" alt="Insctructor photo">
-            <h2>Anderson Marcolino</h2>
-            <p>O cuidado em identificar pontos críticos na necessidade de renovação processual prepara-nos
-                para enfrentar situações atípicas decorrentes do sistema de participação geral. <br>As experiências acumuladas
-                demonstram que a valorização de fatores subjetivos afeta positivamente a correta previsão das novas proposições.
-            </p>
-            <ul>
-                <li><a href="">
-                    <img src="" alt="">
-                </a></li>
-                <li><a href="">
-                    <img src="" alt="">
-                </a></li>
-                <li><a href="">
-                    <img src="" alt="">
-                </a></li>
-            </ul>
-        </section>
+	<!-- Dia 1 -->
+	<section class="day1">
+		<div class="container">
+			<header>
+				<h1>Dia 1</h1>
+			</header>
 
-        <!--DIA 1-->
-        <section class="dia1">
-            <h1>Dia 1</h1>
-            <ul>
-                <!--Coluna 1-->
-                <li>
-                    <img src="" alt="">
-                    <ul>
-                        <il>Front-end profiles</il>
-                        <il>Work market</il>
-                        <il>Actuation areas</il>
-                    </ul>
-                </li>
-                <!--Coluna 2-->
-                <li>
-                    <img src="" alt="">
-                    <ul>
-                        <il>Tools</il>
-                        <il>Automatic tasks</il>
-                        <il>Editors</il>
-                    </ul>
-                </li>
-                <!--Coluna 3-->
-                <li>
-                    <img src="" alt="">
-                    <ul>
-                        <il>User experience</il>
-                        <il>usability</il>
-                        <il>Design/Wireframes</il>
-                    </ul>
-                </li>
-           </ul>
+			<article>
+				<ul class="subjects">
+					<!-- Coluna 1 -->
+					<li>
+						<span class="image column1"></span>
+						<ul>
+							<li>Perfis Frontend</li>
+							<li>Mercado de trabalho</li>
+							<li>Áreas de atuação</li>
+						</ul>
+					</li>
 
-           <h2>Hands On</h2>
-           <p>Usability Test</p>
+					<!-- Coluna 2 -->
+					<li>
+						<span class="image column2"></span>
+						<ul>
+							<li>Ferramentas</li>
+							<li>Automatizadores de tarefas</li>
+							<li>Editores</li>
+						</ul>
+					</li>
 
-        </section>
+					<!-- Coluna 3 -->
+					<li>
+						<span class="image column3"></span>
+						<ul>
+							<li>User experience</li>
+							<li>Usabilidade</li>
+							<li>Design/Wireframes</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<footer>
+				<h2>Hands On</h2>
+				<p>Teste de usabilidade</p>
+			</footer>
+	</section>
 
-        <!--DIA 2-->
-        <section class="dia2">
-            <h1>Dia 2</h1>
-            <img src="" alt="">
-            <ul>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-            </ul>
+	<section class="day2">
+		<div class="container">
+			<header>
+				<h1>Dia 2</h1>
+			</header>
+			<article>
+				<span class="image"></span>
+				<ul class="subjects"> 
+					<li>- Arquitetura de um projeto frontend</li>
+					<li>- HTML </li>
+					<li>- Semântica</li>
+					<li>- SEO</li>
+					<li>- Boas práticas</li>
+					<li>- Frameworks</li>
+					<li>- Boiler plates </li>
+				</ul>
+			</article>
+			<footer>
+				<h2>Hands On</h2>
+				<p>HTML deste site</p>
+			</footer>
+		</div>
+	</section>
 
-           <h2>Hands On</h2>
-           <p>Usability Test</p>
+	<section class="day3">
+		<div class="container">
+			<header>
+				<h1>Dia 3</h1>
+			</header>
+			<article>
+				<span class="image"></span>
+				<ul class="subjects"> 
+					<li>- CSS</li>
+					<li>- Pré-processadores</li>
+					<li>- Boas práticas</li>
+					<li>- Frameworks</li>
+					<li>- Ferramentas</li>
+				</ul>
+			</article>
+			<footer>
+				<h2>Hands On</h2>
+				<p>Aplicar o CSS deste site no HTML do dia 2</p>
+			</footer>			
+		</div>
+	</section>
 
-        </section>
+	<section class="day4">
+		<div class="container">
+			<header>
+				<h1>Dia 4</h1>
+			</header>
+			<article>
+				<span class="image"></span>
+				<ul class="subjects"> 
+					<li>- Javascript</li>
+					<li>- Frameworks </li>
+					<li>- Boas práticas</li>
+					<li>- Testes unitários</li>
+				</ul>
+			</article>
+			<footer>
+				<h2>Hands On</h2>
+				<p>Aplicar o CSS deste site no HTML do dia 2</p>
+			</footer>
+		</div>
+	</section>
 
-        <!--DIA 3-->
-        <section class="dia2">
-            <h1>Dia 3</h1>
-            <img src="" alt="">
-            <ul>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-            </ul>
+	<section class="participants">
+		<div class="container">
+			<header>
+				<h1>Eu participei!</h1>
+			</header>
+			<!-- <article>
+				<ul class="persons">
+					<li>
+						<figure>
+							<img src="images/zombie.png" alt="Uarrrrr">
+							<figcaption>João das Neves</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/zombie.png" alt="Uarrrrr">
+							<figcaption>João das Neves</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/zombie.png" alt="Uarrrrr">
+							<figcaption>João das Neves</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/zombie.png" alt="Uarrrrr">
+							<figcaption>João das Neves</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="images/zombie.png" alt="Uarrrrr">
+							<figcaption>João das Neves</figcaption>
+						</figure>
+					</li>
+				</ul>	
+			</article> -->
+		</div>
+	</section>
 
-           <h2>Hands On</h2>
-           <p>Usability Test</p>
+	<footer class="footer">
+		Open Sanca - 2016
+	</footer>
 
-        </section>
-
-
-        <!--DIA 4-->
-        <section class="dia2">
-            <h1>Dia 4</h1>
-            <img src="" alt="">
-            <ul>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-                <li>Somenthing here</li>
-            </ul>
-
-           <h2>Hands On</h2>
-           <p>Usability Test</p>
-
-        </section>
-
-
-        <section class="eu-participei">
-            <h1>Eu participei!</h1>
-            
-            <ul>
-                <li>
-                    <figure>
-                        <img src="images/opensanca.jpg" alt="João das Neves">
-                        <figcaption>João das Neves</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="" alt="João das Neves">
-                        <figcaption>João das Neves</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="" alt="João das Neves">
-                        <figcaption>João das Neves</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="" alt="João das Neves">
-                        <figcaption>João das Neves</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="" alt="João das Neves">
-                        <figcaption>João das Neves</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-
-        <footer>
-            Open Sanca - 2016
-        </footer>
-
-        <!--Bootstrap : http://getbootstrap.com/getting-started/#download-->
-        <!-- Latest compiled and minified CSS -->
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-        <!-- Latest compiled and minified JavaScript -->
-        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-
-        <!--Matereal : https://getmdl.io
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script> -->
-
-
-    </body>
+</body>
 </html>
