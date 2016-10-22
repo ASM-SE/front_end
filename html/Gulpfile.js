@@ -11,6 +11,8 @@ var concat = require('gulp-concat');
 //é possível chamar somente a task com o comando gulp compress, por exemplo
 //a gulp task indica qual das tasks vão rodar no comando gulp
 //além disso, este arquivo está configurado para copiar os arquivos e jogar para a pasta dist
+//Resumidamente, ele automatiza tasks que antes eram feitas manualmente.
+//No site do npm tem outras tasks que o gulp apoia.
 
 gulp.task('cssmin', function () {
     gulp.src('css/**/*.css')
