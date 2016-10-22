@@ -68,8 +68,10 @@ gulp.task('concat', function() {
 gulp.task('sass', function () {
   return gulp.src('css/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('css'));
 });
+
+
  
 gulp.task('sass:watch', function () {
   gulp.watch('css/**/*.scss', ['sass']);
