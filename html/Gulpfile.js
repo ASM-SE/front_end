@@ -68,7 +68,7 @@ gulp.task('concat', function() {
 gulp.task('sass', function () {
   return gulp.src('css/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('dist/css')); //mudar para css quando for gerear normal
 });
 
 
